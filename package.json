@@ -1,0 +1,40 @@
+{
+  "name": "loading-js",
+  "version": "1.0.0",
+  "description": "Loading spiner with async functions :)",
+  "main": "./lib/src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon ./src/test.ts",
+    "start": "node ./lib/test.js"
+  },
+  "repository": "git+https://github.com/z7pz/loading-js.git",
+  "keywords": [
+    "loading",
+    "loader",
+    "load",
+    "loading-console",
+    "console",
+    "codestation"
+  ],
+  "author": "",
+  "homepage": "https://github.com/stuyy/slappey#readme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/z7pz/loading-js/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn build"
+    }
+  },
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "elegant-spinner": "^2.0.0",
+    "log-symbols": "^5.0.0",
+    "log-update": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.4"
+  }
+}
